@@ -1,0 +1,72 @@
+/*Import*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Seaweed+Script&display=swap');
+/*General Global Setting*/
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+   --primary: #ff0066;
+}
+
+body {
+    position: relative;
+    background: #ffff;
+    font-family: "Seaweed Script", cursive;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+/*Header*/
+header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 100px;
+   background: transparent;
+   backdrop-filter: blur(6px);
+   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
+   transition: 1s;
+   z-index: 1300;
+}
+
+header.active {
+    background: #ffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+
+}
+
+.logo {
+    font-family: "Seaweed Script", cursive;
+    font-size: 60px;
+    color: goldenrod;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*Mobile Navigation*/
+
+/*Banner*/
+
+/*Main Start*/
+
+/*Make up artests Section*/
+
+/*Hair Stylests Section*/
+
+/*Photographers Section*/
+
+/*Bridal bouquet Section*/
+
+/*Contact Section*/
+
+/**/
+
+/**/

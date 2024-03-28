@@ -1,10 +1,7 @@
-from django.urls import path ,include
+from django.urls import path 
 from apps.bbmodule import views
 
 urlpatterns = [
-    path('',views.index,name='index'),
-    path('bb',views.bb),
-    path('bb1/<int:bID>', views.bb1),
-    path('bbmodule', views.bb)
-
+    path('',views.index,name='index')
+   
 ]
