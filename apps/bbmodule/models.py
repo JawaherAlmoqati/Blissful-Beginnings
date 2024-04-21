@@ -6,3 +6,4 @@ class bb(models.Model):
      Photographers= models.CharField(max_length=50)
      Bridemaid= models.CharField(max_length=50)  
      Price= models.FloatField(default=0.0)  
+

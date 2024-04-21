@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     ##BB install the app
+    'apps',
     'django.contrib.staticfiles',
 ]
 
