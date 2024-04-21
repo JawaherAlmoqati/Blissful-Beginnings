@@ -1,0 +1,26 @@
+{% extends "layouts/base.html" %}
+
+{% block stylesheets%}
+<style>
+    /*...*/
+</style>
+{% endblock stylesheets%}
+
+{% block title %} book info {% endblock %}
+
+{% block content %}
+<h3>Blissful Beginnings</h3>
+<h4>Makeup artists</h4>
+<p>{{bb.Makeup_artists}}</p>
+<h4>Price</h4>
+<p>{{bb.Price}}</p>
+
+<img src="{%static '/media/images/logo1.jpg'%}" width = "22" height = "33" />
+
+{% endblock content %}
+
+{% block javascripts%}
+<script>
+    /*...*/
+</script>
+{% endblock javascripts%}
