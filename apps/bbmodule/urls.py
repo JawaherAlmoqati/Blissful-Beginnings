@@ -3,8 +3,10 @@ from apps.bbmodule import views
 
 urlpatterns = [
     path('',views.index,name='index'),
-    path('bb', views.bb, name = "bb"),
-    path('bb/<int:bId>', views.bb),
-    path('filterbb', views.filterbb, name="filterbb")
-   
+    path('MakeUpList/',views.MakeUpList,name='MakeUpList'),
+    path('HairList/',views.HairList,name='HairList'),
+    path('PhotoList/',views.PhotoList,name='PhotoList'),
+    path('Bridemaid/',views.Bridemaid,name='Bridemaid'),
+    path('Home/',views.Home,name='Home'),
+    path('search/',views.search,name='search'),
 ]

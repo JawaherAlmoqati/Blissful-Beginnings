@@ -1,25 +1,42 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>
-         Blissful Beginnings - {% block title %}{% endblock %}
-      </title>
-     
-      {% block stylesheets %}
-      <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-      {% endblock stylesheets %}
-
-      <!-- here you put your stylesheets-->
-      <!-- here you put your js-->
-   </head>
-   <body>
-      {% include 'includes/header.html' %}
-      
-      {% block content %}
-      {% endblock content %}
-      
-      {% include 'includes/footer.html' %}
-   </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissful Beginnings {% block title %}{% endblock %}</title>
+   
+    {% block stylesheets %}
+    <style>
+        table, th, td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+        }
+    </style>
+    {% endblock stylesheets %}
+</head>
+<body>
+    {% include 'includes/header.html' %}
+    
+    <div id="content">
+        {% block content %}
+            <!-- Banner -->
+            <!-- Main Start -->
+            <!-- Make up artists Section -->
+            <!-- Hair Stylists Section -->
+            <!-- Photographers Section -->
+            <!-- Bridal bouquet Section -->
+            <!-- Contact Section -->
+            <!-- Main End -->
+        {% endblock content %}
+    </div>
+    
+    {% include 'includes/footer.html' %}
+    
+    <!-- Your JavaScript files -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
 </html>

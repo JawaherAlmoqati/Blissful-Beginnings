@@ -1,41 +1,16 @@
 {% extends "layouts/base.html" %}
 
 {% block stylesheets %}
-
-<style>
-    table, th, td {
-        border: 1px solid grey;
-        border-collapse: collapse;
-    }
-</style>
-
 {% endblock stylesheets %}
 
 {% block content %}
+<center>
+    {% if keyword %}
+        <h1> You sreach for {{keyword}}</h1>
+    {% else %}
+        <h1> Try again</h1>
+    {% endif %}
+</center>
 
-<form method="post">
-    {% csrf_token %}
-    <label>Keywords:</label>
-    <input type="text" name="keyword" placeholder="enter a keyword"/>
-    <br/> 
-
-    <label>Search in:</label>
-    <input type="checkbox" name="option1"/><label>Price</label>
-    <input type="checkbox" name="option2"/><label>Bridemaid</label>
-    <br/>
-
-    <select name="selectedchoice" size="4">
-        <option selected>None</option>
-        <option value="go-out">go out</option>
-        <option value="in-salon">in salon</option>
-    </select>
-
-    <br/>
-
-    <textarea name="description" rows="10" cols="30"></textarea>
-    
-    <br/>
-    <button type="submit" >Search</button>
-</form>
 
 {% endblock content %}

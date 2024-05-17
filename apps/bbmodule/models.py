@@ -1,6 +1,6 @@
 from django.db import models
 
-class bb(models.Model):
+class bbWeb(models.Model):
      Makeup_artists= models.CharField(max_length=50)
      Hair_stylists= models.CharField(max_length=50)
      Photographers= models.CharField(max_length=50)
